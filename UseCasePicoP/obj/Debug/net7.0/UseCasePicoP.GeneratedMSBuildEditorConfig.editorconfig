@@ -20,10 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kim/Desktop/UseCasePicoP/UseCasePicoP/Pages/EditItem.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEl0ZW0ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Kim/Desktop/UseCasePicoP/UseCasePicoP/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,6 +35,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Kim/Desktop/UseCasePicoP/UseCasePicoP/Pages/AddItem.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkSXRlbS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-l9tmffcf85
+
+[C:/Users/Kim/Desktop/UseCasePicoP/UseCasePicoP/Pages/EditItem.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-fzve82cn2s
 
 [C:/Users/Kim/Desktop/UseCasePicoP/UseCasePicoP/Pages/Items.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSXRlbXMucmF6b3I=

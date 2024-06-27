@@ -94,3 +94,4 @@ C:\Users\Kim\Desktop\UseCasePicoP\UseCasePicoP\obj\Debug\net7.0\refint\UseCasePi
 C:\Users\Kim\Desktop\UseCasePicoP\UseCasePicoP\obj\Debug\net7.0\UseCasePicoP.pdb
 C:\Users\Kim\Desktop\UseCasePicoP\UseCasePicoP\obj\Debug\net7.0\UseCasePicoP.genruntimeconfig.cache
 C:\Users\Kim\Desktop\UseCasePicoP\UseCasePicoP\obj\Debug\net7.0\ref\UseCasePicoP.dll
+C:\Users\Kim\Desktop\UseCasePicoP\UseCasePicoP\obj\Debug\net7.0\scopedcss\Pages\EditItem.razor.rz.scp.css

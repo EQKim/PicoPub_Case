@@ -68,7 +68,6 @@ else
 
     private async Task LoadItems()
     {
-        Console.WriteLine($"Loading items with SortBy: {SortBy}, Ascending: {Ascending}");
         TotalItemsCount = await ItemService.GetTotalItemsCountAsync();
         items = await ItemService.GetItemsAsync(CurrentPage, PageSize, SortBy, Ascending);
     }
