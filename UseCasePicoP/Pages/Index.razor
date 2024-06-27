@@ -1,0 +1,21 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, Welcome to the E-Store!</h1>
+
+<p>
+     Browse our wide range of items by clicking the button below.
+</p>
+
+<button class="btn btn-primary" @onclick="NavigateToItems">Go to Items</button>
+
+@code {
+    [Inject]
+    private NavigationManager Navigation { get; set; }
+
+    private void NavigateToItems()
+    {
+        Navigation.NavigateTo("/items");
+    }
+}

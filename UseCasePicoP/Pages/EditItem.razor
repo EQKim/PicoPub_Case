@@ -1,0 +1,74 @@
+﻿@page "/edit-item/{Id}"
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Forms
+@using UseCasePicoP.ClassLibrary
+@using UseCasePicoP.Services.Interface
+@inject IItemService ItemService
+@inject NavigationManager Navigation
+@code {
+    [Parameter]
+    public string Id { get; set; }
+    private Item ExistingItem { get; set; }
+    private string ErrorMessage { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        ExistingItem = await ItemService.GetItemByIdAsync(Id);
+        if (ExistingItem == null)
+        {
+            ErrorMessage = "Item not found.";
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        await ItemService.UpdateItemAsync(Id, ExistingItem);
+        Navigation.NavigateTo("/items");
+    }
+}
+
+@if (ExistingItem == null)
+{
+    <p>@ErrorMessage</p>
+}
+else
+{
+    <h3>Edit Item</h3>
+
+    <EditForm Model="ExistingItem" OnValidSubmit="HandleValidSubmit" class="form-container">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <InputText id="name" @bind-Value="ExistingItem.Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <InputText id="description" @bind-Value="ExistingItem.Description" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <InputNumber id="price" @bind-Value="ExistingItem.Price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <InputFile OnChange="HandleImageUpload" class="form-control-file" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </EditForm>
+}
+
+@code {
+    private async Task HandleImageUpload(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        using var memoryStream = new MemoryStream();
+        await file.OpenReadStream().CopyToAsync(memoryStream);
+        ExistingItem.ImageData = memoryStream.ToArray();
+        
+        // Log the length of the image data
+        Console.WriteLine($"Image data length: {ExistingItem.ImageData.Length}");
+    }
+}
