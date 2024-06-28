@@ -33,7 +33,7 @@ else
             <li>
                 <img src="@($"data:image/png;base64,{Convert.ToBase64String(item.ImageData)}")" alt="@item.Name" />
                 <div class="item-details">
-                    <span>@item.Name</span>
+                    <span><strong>@item.Name</strong></span>
                     <p>@item.Description</p>
                     <p>Price: @item.Price.ToString("N2") DKK</p>
                 </div>
