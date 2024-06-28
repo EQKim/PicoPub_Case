@@ -67,8 +67,5 @@ else
         using var memoryStream = new MemoryStream();
         await file.OpenReadStream().CopyToAsync(memoryStream);
         ExistingItem.ImageData = memoryStream.ToArray();
-        
-        // Log the length of the image data
-        Console.WriteLine($"Image data length: {ExistingItem.ImageData.Length}");
     }
 }

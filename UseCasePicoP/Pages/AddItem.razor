@@ -50,21 +50,17 @@
         using var memoryStream = new MemoryStream();
         await file.OpenReadStream().CopyToAsync(memoryStream);
         NewItem.ImageData = memoryStream.ToArray();
-        
-        // Log the length of the image data
-        Console.WriteLine($"Image data length: {NewItem.ImageData.Length}");
     }
 
     private async Task HandleValidSubmit()
     {
-        // Check if ImageData is set
         if (NewItem.ImageData == null || NewItem.ImageData.Length == 0)
         {
             ErrorMessage = "Please upload an image.";
             return;
         }
 
-        NewItem.Id = ObjectId.GenerateNewId().ToString(); // Ensure a new ID is generated
+        NewItem.Id = ObjectId.GenerateNewId().ToString(); 
         await ItemService.CreateItemAsync(NewItem);
         Navigation.NavigateTo("/items");
     }

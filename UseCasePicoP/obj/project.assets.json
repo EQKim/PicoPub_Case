@@ -781,19 +781,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kim\\.nuget\\packages\\": {}
+    "C:\\Users\\karee\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kim\\Desktop\\UseCasePicoP\\UseCasePicoP\\UseCasePicoP.csproj",
+      "projectUniqueName": "C:\\Users\\karee\\OneDrive\\Desktop\\Repository\\PicoPub_Case\\UseCasePicoP\\UseCasePicoP.csproj",
       "projectName": "UseCasePicoP",
-      "projectPath": "C:\\Users\\Kim\\Desktop\\UseCasePicoP\\UseCasePicoP\\UseCasePicoP.csproj",
-      "packagesPath": "C:\\Users\\Kim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kim\\Desktop\\UseCasePicoP\\UseCasePicoP\\obj\\",
+      "projectPath": "C:\\Users\\karee\\OneDrive\\Desktop\\Repository\\PicoPub_Case\\UseCasePicoP\\UseCasePicoP.csproj",
+      "packagesPath": "C:\\Users\\karee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\karee\\OneDrive\\Desktop\\Repository\\PicoPub_Case\\UseCasePicoP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\karee\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -811,6 +811,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -833,6 +838,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -841,7 +864,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

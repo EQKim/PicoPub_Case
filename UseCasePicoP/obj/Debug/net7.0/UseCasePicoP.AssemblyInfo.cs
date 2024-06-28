@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UseCasePicoP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92148128ee0fce31dd4a6fd17839a9a567625f2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("UseCasePicoP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UseCasePicoP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

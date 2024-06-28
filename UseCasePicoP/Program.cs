@@ -6,10 +6,9 @@ using UseCasePicoP.MongoDB;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddMemoryCache(); // Add MemoryCache service
 builder.Services.AddSingleton<MongoDBAccess>();
 builder.Services.AddScoped<IItemService, ItemService>();
 
