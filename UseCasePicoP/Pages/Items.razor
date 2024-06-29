@@ -39,6 +39,7 @@ else
                 </div>
                 <div class="item-actions">
                     <button class="btn btn-secondary" @onclick="() => EditItem(item.Id)">Edit</button>
+                    <button class="btn btn-secondary" @onclick="() => DeleteItem(item.Id)">Delete</button>
                 </div>
             </li>
         }
@@ -90,6 +91,12 @@ else
         }
     }
 
+    private async Task DeleteItem(string id)
+    {
+        await ItemService.DeleteItemAsync(id);
+        await LoadItems();
+    }
+    
     private void EditItem(string id)
     {
         Navigation.NavigateTo($"/edit-item/{id}");

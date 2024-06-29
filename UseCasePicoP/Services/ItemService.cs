@@ -92,6 +92,7 @@ namespace UseCasePicoP.Services
         {
             await _context.Items.DeleteOneAsync(item => item.Id == id);
             InvalidateAllCache();
+            
         }
 
         
